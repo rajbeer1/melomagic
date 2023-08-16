@@ -14,7 +14,7 @@ function App() {
   const getsongs = async () => {
     try {
       const response = await axios.post(
-        'ec2-3-80-211-234.compute-1.amazonaws.com:4500/playlist',
+        'https://melomagic-api.onrender.com/playlist',
         {
           limit: limit,
           target_liveness: target_liveness,
